@@ -36,7 +36,7 @@ impl AppConfig {
         }
 
         // Merge settings with env variables
-        settings.merge(Environment::with_prefix("APP"))?;
+        settings.merge(Environment::with_prefix("GIT_HISTORY"))?;
 
         // TODO: Merge settings with Clap Settings Arguments
 
